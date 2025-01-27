@@ -1,0 +1,56 @@
+{
+  "title": "Cloud Storage Pricing",
+  "description": {
+    "main": "Compare pricing across major object storage providers. Input your estimated usage to find the most cost-effective solution for your needs.",
+    "subtext": "Prices include storage costs, data transfer (egress), and API operations.",
+    "disclaimer1": "* All prices are estimates and may vary by region",
+    "disclaimer2": "* Prices updated as of March 2024"
+  },
+  "usage": {
+    "title": "Usage Parameters",
+    "storage": {
+      "label": "Average Storage (TB)",
+      "tooltip": "Enter the amount of data you plan to store continuously for the month.",
+      "description": "Storage is calculated based on continuous usage throughout the month"
+    },
+    "traffic": {
+      "label": "Monthly Outbound Traffic (TB)",
+      "tooltip": "Enter your expected monthly outbound traffic (egress).",
+      "description": "Traffic is measured as total outbound data transfer per month"
+    },
+    "writeOps": {
+      "label": "Write Operations (millions/month)",
+      "tooltip": "Class A operations: PUT, POST, DELETE, LIST operations",
+      "description": "Write operations include modifications to objects"
+    },
+    "readOps": {
+      "label": "Read Operations (millions/month)",
+      "tooltip": "Class B operations: GET, HEAD operations",
+      "description": "Read operations include retrieving objects"
+    }
+  },
+  "providers": {
+    "title": "Compare Providers",
+    "bestValue": "Best Value",
+    "costs": {
+      "monthly": "month",
+      "baseFee": "Base fee",
+      "storage": "Storage cost",
+      "traffic": "Traffic cost",
+      "writeOps": "Write Operations cost",
+      "readOps": "Read Operations cost"
+    },
+    "included": {
+      "storage": "Included storage",
+      "traffic": "Included traffic",
+      "writeOps": "Included write ops",
+      "readOps": "Included read ops",
+      "unlimited": "Unlimited"
+    },
+    "minObject": "Min. billable object"
+  },
+  "footer": {
+    "copyright": "Cloud Storage Calculator",
+    "viewSource": "View on GitHub"
+  }
+} 

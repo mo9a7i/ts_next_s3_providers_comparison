@@ -1,0 +1,109 @@
+{
+  "providers": [
+    {
+      "name": "Hetzner Buckets",
+      "logo": "/logos/hetzner.png",
+      "baseFee": 4.99,
+      "includedStorageTB": 1,
+      "includedTrafficTB": 1.095,
+      "additionalStorageCostPerTB": 4.89,
+      "additionalTrafficCostPerTB": 1.00,
+      "minimumBillableObjectSizeKB": 64,
+      "operations": {
+        "classA": {
+          "included": -1,
+          "costPer1M": 0
+        },
+        "classB": {
+          "included": -1,
+          "costPer1M": 0
+        }
+      },
+      "billingModel": "pay-as-you-go"
+    },
+    {
+      "name": "Amazon S3",
+      "logo": "/logos/aws.png",
+      "baseFee": 0,
+      "includedStorageTB": 0,
+      "includedTrafficTB": 0,
+      "additionalStorageCostPerTB": 23.552,
+      "additionalTrafficCostPerTB": 0.717,
+      "minimumBillableObjectSizeKB": 0,
+      "operations": {
+        "classA": {
+          "included": 0,
+          "costPer1M": 5.00
+        },
+        "classB": {
+          "included": 0,
+          "costPer1M": 0.40
+        }
+      },
+      "billingModel": "pay-as-you-go"
+    },
+    {
+      "name": "Google Cloud Storage",
+      "logo": "/logos/gcp.png",
+      "baseFee": 0,
+      "includedStorageTB": 0,
+      "includedTrafficTB": 0,
+      "additionalStorageCostPerTB": 20.470,
+      "additionalTrafficCostPerTB": 0,
+      "minimumBillableObjectSizeKB": 0,
+      "operations": {
+        "classA": {
+          "included": 0,
+          "costPer1M": 4.998
+        },
+        "classB": {
+          "included": 0,
+          "costPer1M": 0.398
+        }
+      },
+      "billingModel": "pay-as-you-go"
+    },
+    {
+      "name": "Azure Blob Storage",
+      "logo": "/logos/azure.png",
+      "baseFee": 0,
+      "includedStorageTB": 0,
+      "includedTrafficTB": 0,
+      "additionalStorageCostPerTB": 20.80,
+      "additionalTrafficCostPerTB": 20.00,
+      "minimumBillableObjectSizeKB": 0,
+      "operations": {
+        "classA": {
+          "included": 0,
+          "costPer1M": 0.055
+        },
+        "classB": {
+          "included": 0,
+          "costPer1M": 0.0044
+        }
+      },
+      "billingModel": "pay-as-you-go"
+    },
+    {
+      "name": "Cloudflare R2",
+      "logo": "/logos/cloudflare.png",
+      "baseFee": 0,
+      "includedStorageTB": 0.01,
+      "includedTrafficTB": 999999999,
+      "additionalStorageCostPerTB": 15.36,
+      "additionalTrafficCostPerTB": 0,
+      "minimumBillableObjectSizeKB": 0,
+      "operations": {
+        "classA": {
+          "included": 1,
+          "costPer1M": 4.50
+        },
+        "classB": {
+          "included": 10,
+          "costPer1M": 0.36
+        }
+      },
+      "billingModel": "pay-as-you-go"
+    }
+  ]
+}

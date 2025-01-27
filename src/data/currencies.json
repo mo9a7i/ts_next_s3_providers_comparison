@@ -1,0 +1,21 @@
+{
+  "base": "USD",
+  "currencies": {
+    "USD": {
+      "symbol": "$",
+      "rate": 1
+    },
+    "EUR": {
+      "symbol": "€",
+      "rate": 0.92
+    },
+    "GBP": {
+      "symbol": "£",
+      "rate": 0.79
+    },
+    "SAR": {
+      "symbol": "SAR",
+      "rate": 3.75
+    }
+  }
+} 
