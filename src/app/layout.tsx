@@ -8,16 +8,9 @@ export async function generateStaticParams() {
   return [{ lang: 'en-US' }, { lang: 'ar-SA' }]
 }
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+type LayoutProps = Promise<{
+  lang: "en-US" | "ar-SA";
+}>;
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,15 +28,27 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://degree-0.github.io/ts_next_s3_providers_comparison')
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params,
-}: Readonly<{
+  params
+}: {
   children: React.ReactNode;
-  params: { lang: 'en-US' | 'ar-SA' }
-}>) {
+  params: LayoutProps;
+}) {
+  const { lang } = await params;
+
+  const geistSans = Geist({
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
+  });
+
+  const geistMono = Geist_Mono({
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
+  });
+
   return (
-    <html lang={params.lang} suppressHydrationWarning>
+    <html lang={lang} dir={lang === "ar-SA" ? "rtl" : "ltr"} suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
