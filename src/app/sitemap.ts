@@ -1,26 +1,20 @@
 import { MetadataRoute } from 'next';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://degree-0.github.io/ts_next_s3_providers_comparison';
-  
   return [
     {
-      url: baseUrl,
+      url: 'https://degree-0.github.io/ts_next_s3_providers_comparison',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
     },
     {
-      url: `${baseUrl}/en-US/calculator`,
+      url: 'https://degree-0.github.io/ts_next_s3_providers_comparison/en-US',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
     },
     {
-      url: `${baseUrl}/ar-SA/calculator`,
+      url: 'https://degree-0.github.io/ts_next_s3_providers_comparison/ar-SA',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
-    }
+    },
   ];
 } 
