@@ -2,7 +2,7 @@
   "providers": [
     {
       "name": "Hetzner Buckets",
-      "logo": "/logos/hetzner.png",
+      "logo": "/ts_next_s3_providers_comparison/logos/hetzner.png",
       "baseFee": 4.99,
       "includedStorageTB": 1,
       "includedTrafficTB": 1.095,
@@ -44,7 +44,7 @@
     },
     {
       "name": "Google Cloud Storage",
-      "logo": "/logos/gcp.png",
+      "logo": "/ts_next_s3_providers_comparison/logos/gcp.png",
       "baseFee": 0,
       "includedStorageTB": 0,
       "includedTrafficTB": 0,
@@ -86,7 +86,7 @@
     },
     {
       "name": "Cloudflare R2",
-      "logo": "/logos/cloudflare.png",
+      "logo": "/ts_next_s3_providers_comparison/logos/cloudflare.png",
       "baseFee": 0,
       "includedStorageTB": 0.01,
       "includedTrafficTB": 999999999,

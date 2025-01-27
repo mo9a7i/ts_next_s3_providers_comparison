@@ -77,7 +77,7 @@ export function CalculatorClient({ dictionary }: CalculatorClientProps) {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-200 flex flex-col">
+    <div className="min-h-screen bg-zinc-200 dark:bg-zinc-950 flex flex-col">
       <Header 
         currency={currency}
         setCurrency={setCurrency}
