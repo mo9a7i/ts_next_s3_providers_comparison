@@ -7,7 +7,7 @@ interface FooterProps {
 
 export function Footer({ dictionary }: FooterProps) {
   return (
-    <footer className="border-t mt-8">
+    <footer className="border-t border-zinc-400 dark:border-zinc-800 mt-8">
       <div className="container mx-auto px-4 py-6">
         <div className="flex justify-between items-center">
           <p className="text-sm text-muted-foreground">

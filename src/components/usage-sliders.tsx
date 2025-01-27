@@ -22,7 +22,7 @@ export function UsageSliders({
   dictionary
 }: UsageSlidersProps) {
   return (
-    <div className="bg-zinc-300 rounded-lg p-4 border border-zinc-400">
+    <div className="bg-zinc-300 dark:bg-zinc-950 rounded-lg p-4 border border-zinc-400">
       <h2 className="text-lg font-semibold mb-4">{dictionary.usage.title}</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
