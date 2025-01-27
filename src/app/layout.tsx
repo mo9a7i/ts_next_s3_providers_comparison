@@ -12,6 +12,16 @@ type LayoutProps = Promise<{
   lang: "en-US" | "ar-SA";
 }>;
 
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -36,16 +46,6 @@ export default async function RootLayout({
   params: LayoutProps;
 }) {
   const { lang } = await params;
-
-  const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-  });
-
-  const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-  });
 
   return (
     <html lang={lang} dir={lang === "ar-SA" ? "rtl" : "ltr"} suppressHydrationWarning>
