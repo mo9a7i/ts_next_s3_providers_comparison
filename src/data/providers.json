@@ -22,8 +22,8 @@
       "billingModel": "pay-as-you-go"
     },
     {
-      "name": "Amazon S3",
-      "logo": "/logos/aws.png",
+      "name": "AWS S3",
+      "logo": "/ts_next_s3_providers_comparison/logos/aws.png",
       "baseFee": 0,
       "includedStorageTB": 0,
       "includedTrafficTB": 0,
@@ -64,8 +64,8 @@
       "billingModel": "pay-as-you-go"
     },
     {
-      "name": "Azure Blob Storage",
-      "logo": "/logos/azure.png",
+      "name": "Azure Blob",
+      "logo": "/ts_next_s3_providers_comparison/logos/azure.png",
       "baseFee": 0,
       "includedStorageTB": 0,
       "includedTrafficTB": 0,

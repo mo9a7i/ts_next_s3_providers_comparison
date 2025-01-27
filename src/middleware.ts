@@ -14,8 +14,8 @@ export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   
   // If no language is specified, redirect to en-US
-  if (pathname === '/') {
-    return NextResponse.redirect(new URL('/en-US/calculator', request.url))
+  if (pathname === '/ts_next_s3_providers_comparison' || pathname === '/ts_next_s3_providers_comparison/') {
+    return NextResponse.redirect(new URL('/ts_next_s3_providers_comparison/en-US', request.url))
   }
   
   return NextResponse.next()

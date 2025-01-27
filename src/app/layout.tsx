@@ -76,7 +76,7 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} bg-zinc-200 dark:bg-zinc-950 ${inter.className}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} bg-zinc-200 dark:bg-zinc-950 ${inter.className}`} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
